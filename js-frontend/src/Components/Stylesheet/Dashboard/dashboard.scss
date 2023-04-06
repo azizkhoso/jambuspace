@@ -1,0 +1,30 @@
+:root {
+  --primary: #3592d5;
+  --secondary: #29ffa6;
+  --grey: #616161;
+}
+
+.card-left {
+  border-radius: 20px;
+
+  & h6 {
+    font-weight: 700;
+  }
+
+  & p {
+    font-weight: 500;
+    color: var(--grey);
+  }
+}
+
+.card-right {
+  border-radius: 20px;
+}
+
+.txt-primary {
+  color: var(--primary) !important;
+}
+
+.txt-secondary {
+  color: var(--secondary) !important;
+}

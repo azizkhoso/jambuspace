@@ -1,0 +1,12 @@
+node_modules
+/etc
+# /client/build
+yarn.lock
+*.log
+.env
+package-lock.json
+nohup.out
+*.pem
+public/media/*
+.replit
+replit.nix

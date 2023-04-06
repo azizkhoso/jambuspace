@@ -1,0 +1,69 @@
+:root {
+  --primary: #3592d5;
+  --secondary: rgba(0, 149, 255, 0.315);
+  --grey: #65735b;
+  --bg-primary: #005491;
+}
+
+.p {
+  font-size: 15px !important;
+  margin-bottom: 0 !important;
+}
+
+.bg-color-primary {
+  background: var(--bg-primary);
+}
+
+.color-grey {
+  color: var(--grey) !important;
+}
+
+.form-card {
+  min-height: 70vh;
+  padding: 30px 0px;
+}
+
+.logo {
+  color: black;
+}
+
+.loginCard {
+  width: 510px !important;
+}
+
+input::placeholder {
+  color: var(--grey) !important;
+}
+
+.account-text {
+  position: relative;
+  font-family: "Neue-Regular";
+  width: 80%;
+  color: var(--grey);
+}
+
+.account-text::before {
+  content: "";
+  height: 1px;
+  background-color: var(--grey);
+  width: 16%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.account-text::after {
+  content: "";
+  height: 1px;
+  background-color: var(--grey);
+  width: 16%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.footer-content {
+  line-height: 18px;
+}

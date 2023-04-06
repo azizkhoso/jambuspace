@@ -1,0 +1,170 @@
+:root {
+  --bgAppBarDark: #111b21;
+  --bgAppBarLight: #202c33;
+  --sidebarWidth: 400px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.chat-app-bar {
+  background: var(--bgAppBarLight);
+}
+
+.bg-appbar-light {
+  background: var(--bgAppBarLight);
+}
+
+.bg-appbar-dark {
+  background: var(--bgAppBarDark);
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+}
+
+.dropdown-toggle:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.sidebarUserImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar-full {
+  & .input-wrapper {
+    border-bottom: 1px solid var(--bgAppBarLight);
+
+    & .search-input {
+      background: #202c33;
+      color: #9fa9af;
+
+      & input {
+        background: #202c33;
+        color: #9fa9af;
+
+        &::placeholder {
+          color: #9fa9af !important;
+        }
+      }
+    }
+  }
+
+  & .chats-card {
+    background: #111b21;
+
+    & h6 {
+      color: white;
+    }
+
+    & .conversation {
+      cursor: pointer;
+    }
+
+    & .chat-time {
+      font-size: 12px;
+    }
+
+    & .chat-arrow-down {
+      visibility: hidden;
+    }
+
+    & .msg-description {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 230px;
+    }
+
+    &:hover {
+      .chat-arrow-down {
+        visibility: visible;
+      }
+    }
+  }
+
+  & .chats-contacts {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
+    position: absolute;
+    top: 138px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.conversation-wrapper {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.conversation-text {
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 769px) {
+  .sidebar-full {
+    width: calc(var(--sidebarWidth)) !important;
+
+    & .chats-card {
+      & .msg-description {
+        width: 230px;
+      }
+    }
+
+    & .chats-contacts {
+      width: calc(var(--sidebarWidth) + 12px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 540px) {
+  .sidebar-full {
+    width: calc(var(--sidebarWidth) - 150px) !important;
+
+    & .chats-card {
+      & .msg-description {
+        width: 95px;
+      }
+    }
+
+    & .chats-contacts {
+      width: calc(var(--sidebarWidth) - 150px + 12px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .sidebar-full {
+    width: 100% !important;
+
+    & .chats-card {
+      & .msg-description {
+        width: 45vw;
+      }
+    }
+
+    & .chats-contacts {
+      width: calc(100% + 12px) !important;
+    }
+  }
+}

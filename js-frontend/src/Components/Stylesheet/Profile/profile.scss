@@ -1,0 +1,206 @@
+:root {
+  --primary: #3592d5;
+  --secondary: #29ffa6;
+  --links: #00538f;
+  --grey: #616161;
+  --lightGrey: #f1f1f1;
+}
+
+.profile-page {
+  .section-heading {
+    color: #f10000;
+    font-size: 40px;
+  }
+
+  .user-profile {
+    position: relative;
+    padding: 30px;
+    background-color: var(--lightGrey);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px var(--grey);
+
+    .user-img-section,
+    .user-detail-section {
+      padding: 10px 0px;
+    }
+
+    .profile-img-wrapper {
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .change-photo-btn {
+        visibility: hidden;
+        position: absolute;
+        bottom: 0px;
+        background-color: black;
+        color: #fff;
+        width: 100%;
+        padding: 5px;
+        opacity: 0.7;
+        text-align: center;
+        cursor: pointer;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &:hover .change-photo-btn {
+        visibility: visible;
+      }
+    }
+
+    .edit-btn {
+      color: #b9b9b9;
+      cursor: pointer;
+
+      &:hover {
+        color: #616161;
+        text-decoration: underline;
+      }
+    }
+
+    .send-message-btn {
+      position: absolute;
+      right: 30px;
+    }
+  }
+
+  .jobs-slider-section {
+    .slick-slider {
+      padding: 20px;
+    }
+
+    .slick-track {
+      padding: 30px 0px;
+    }
+
+    .slick-prev {
+      left: -10px;
+    }
+
+    .slick-next {
+      right: -10px;
+    }
+
+    .slick-center .job-card {
+      transition: transform 1s;
+      transform: scale(1.15);
+      box-shadow: 0px 5px 10px 0px gray;
+    }
+
+    .job-wrapper {
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .job-card {
+      background-color: var(--lightGrey);
+      transition: 0.5 ease;
+      height: 400px;
+
+      img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      h3 {
+        color: #000;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      p {
+        color: #504e52;
+      }
+
+      a {
+        color: var(--links);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .reviews {
+    padding: 30px 0px;
+    min-height: 300px;
+
+    .single-review {
+      // border: 2px solid green;
+      background: var(--lightGrey);
+      box-shadow: 0px 0px 5px var(--grey);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px 0px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .profile-page {
+    .user-profile {
+      .profile-img-wrapper {
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .profile-page {
+    .user-profile {
+      .profile-img-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .profile-page {
+    .user-profile {
+      .profile-img-wrapper {
+        width: 125px;
+        height: 125px;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .profile-page {
+    .user-profile {
+      .profile-img-wrapper {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .profile-page {
+    .user-profile {
+      .profile-img-wrapper {
+        width: 175px;
+        height: 175px;
+      }
+    }
+  }
+}

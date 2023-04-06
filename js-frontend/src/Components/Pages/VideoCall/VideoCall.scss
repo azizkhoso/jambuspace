@@ -1,0 +1,43 @@
+
+.video-chat-body {
+	background-image: url(https://images.wallpaperscraft.com/image/single/gradient_color_blue_155118_1280x720.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.container-videoChat {
+	display: grid;
+	grid-template-columns: 7fr 3fr;
+}
+
+.myId {
+	margin-right: 5rem;
+	border-radius: 5px;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.301);
+	backdrop-filter: blur(3px);
+	padding: 2rem;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.call-button {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.video-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-content: center;
+	margin-top: 10rem;
+	margin-left: 10rem;
+}
+
+.caller {
+	text-align: center;
+	color: #fff;
+}
+

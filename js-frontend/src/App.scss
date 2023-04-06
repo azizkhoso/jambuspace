@@ -1,0 +1,66 @@
+:root {
+  --primary: #3592d5;
+  --secondary: #29ffa6;
+  --links: #00538f;
+  --grey: #616161;
+  --lightGrey: #f1f1f1;
+  --baseFont: 'Neue-Regular';
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+.font-rebrand {
+  font-family: 'Marcellus', serif;
+}
+
+.font-primary {
+  font-family: 'Neue-Regular';
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-secondary {
+  color: var(--secondary);
+}
+
+.container-2 {
+  margin-top: 5vh;
+}
+
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.border-radius {
+  border: none;
+  border-radius: 12px;
+}
+
+.btn-topskill {
+  background-color: transparent;
+  border: 0;
+  color: #00538f9d !important;
+  font-weight: 600;
+}
+
+.btn-topskill:hover {
+  color: #00538f !important;
+}
+
+.activeLink {
+  color: #3592d5;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Neue-Regular';
+  src: url(Components/assets/NeueMontrealRegular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');

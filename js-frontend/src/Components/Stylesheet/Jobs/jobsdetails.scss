@@ -1,0 +1,29 @@
+.job-details-title{
+    font-size: 43px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width :992px) {
+    .login-form-column{
+        display: none;
+    }
+  }
+
+.details-p {
+    font-size:15px;
+    margin-bottom:0;
+    padding-bottom:0;
+    line-height:17px;
+}
+.details-p-2 {
+    font-size:15px;
+    margin-bottom:0;
+    padding-bottom:0;
+    line-height:15px;
+    margin-top: 16px;
+}
+
+.job-section-signup{
+    border-radius: 15px;
+    background-color: #003d69a6;
+}
